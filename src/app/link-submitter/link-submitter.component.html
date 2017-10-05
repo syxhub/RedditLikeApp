@@ -1,0 +1,12 @@
+<form class="form-container">
+  <h3 class="my-4">Add a Link</h3>
+  <div class="field">
+    <label for="title">Title:</label><br>
+    <input name="title" #newtitle>
+  </div>
+  <div class="field">
+    <label for="link">Link:</label><br>
+    <input name="link" #newlink>
+  </div>
+  <button class="btn btn-primary mb-3 float-right" (click)="addArticle(newtitle, newlink)">Submit</button>
+</form>

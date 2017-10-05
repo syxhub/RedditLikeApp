@@ -1,0 +1,34 @@
+.article-container {
+    height: 100px;
+    .value {
+        font-size: 3rem;
+        margin-bottom: -12px;
+    }
+    .label {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: 600;
+        color: #0612B3;
+    }
+    .vote {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+        &.up {
+            color: #08C408;
+        }
+        &.down {
+            color: #940F0F;
+        }
+    }
+    .statistic {
+        left: 15px;
+        width: 20%;
+        height: 100px;
+        color: black;
+        background-color: lightgrey;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="d-flex my-4 row article-container container" *ngIf="article">
+  <div class="card statistic text-center"><b>
+    <div class="value">{{ article.votes }}</div>
+    <div class="label">Points</div>
+  </b></div>
+  <div class="pl-4">
+    <a href="{{ article.link }}" class="title">{{ article.title }}</a>
+    <div class="meta text-dark">({{article.link}})</div>
+    <div class="row">
+      <a href (click)="voteUp()" class="col vote up">upvote</a>
+      <a href (click)="voteDown()" class="col vote down">downvote</a>
+    </div>
+  </div>
+</div>
